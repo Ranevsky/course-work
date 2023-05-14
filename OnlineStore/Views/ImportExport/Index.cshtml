@@ -1,0 +1,28 @@
+﻿@model OnlineStore.Models.ViewModel.ImportExportModel
+@{
+    ViewData["Title"] = "Products";
+    Layout = "~/Views/Admin/_AdminLayout.cshtml";
+}
+
+<h1>Import</h1>
+<form method="post" asp-action="Import" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Files" class="control-label">Files</label>
+        <input asp-for="Files" class="form-control" id="input-file"/>
+        <span asp-validation-for="Files" class="text-danger"></span>
+        <input type="submit" class="btn btn-outline-success" value="Import"/>
+    </div>
+</form>
+
+<h1>Export</h1>
+<div class="container">
+    <form method="get" asp-action="Export">
+        <label asp-for="Formats" class="control-label">Format</label>
+        <select name="Formats" asp-items="@Model.Formats" class="form-control"></select>
+        <span asp-validation-for="Formats" class="text-danger"></span>
+        <input type="submit" class="btn btn-outline-success" value="Export"/>
+        @* @Html.ActionLink("Export", "Export", "ImportExport", Model.Formats.SelectedValue, new { @class = "btn btn-outline-success" }) *@
+    </form>
+</div>
+
+<script type="text/javascript" src="~/lib/jquery/dist/jquery.js"></script>

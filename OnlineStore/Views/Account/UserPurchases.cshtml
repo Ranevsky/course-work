@@ -1,0 +1,84 @@
+﻿@model OnlineStore.Models.ViewModel.UserPurchasesViewModel
+
+@{
+    ViewData["Title"] = "UserPurchases";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>UserPurchases</h1>
+
+<div id="information-purchase" style="overflow-wrap: break-word;">
+    <hr/>
+    @foreach (var i in Model.Purchases)
+    {
+        <div class="row">
+            <h3>Purchase from @i.CreationTime date</h3>
+            <div class="row" style="margin-left: 5px;">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <td>Product name</td>
+                        <td>Count</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach (var j in i.PurchaseProducts)
+                    {
+                        <tr>
+                            <td>
+                                <a asp-action="Index"
+                                   asp-controller="Product"
+                                   asp-route-id="@j.ProductId">
+                                    @j.Product.Name
+                                </a>
+                            </td>
+                            <td>
+                                @j.Count
+                            </td>
+                        </tr>
+                    }
+                    </tbody>
+                </table>
+                <h4>
+                    Adress: @i.Address
+                </h4>
+                <hr>
+                <br>
+                <h4>
+                    Total price: @i.FullPrice
+                </h4>
+            </div>
+        </div>
+        <br>
+        <hr>
+    }
+
+</div>
+<div>
+    <a class="btn btn-primary" style="color: white" onClick="createReport()">Create report</a>
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Home">Back to Main page</a>
+</div>
+
+<script src="js/html2canvas.min.js"></script>
+<script src="js/jsPDF/dist/jspdf.umd.js"></script>
+<script>
+function createReport() {
+    var doc = new jsPDF(); 
+    var elementHTML = document.getElementById("information-purchase");
+    
+        doc.html(elementHTML, {
+            callback: function(doc) {
+                // Save the PDF
+                doc.save('document-html.pdf');
+            },
+            margin: [10, 10, 10, 10],
+            autoPaging: 'text',
+            x: 0,
+            y: 0,
+            width: 190, //target width in the PDF document
+            windowWidth: 675 //window width in CSS pixels
+        });
+}
+</script>

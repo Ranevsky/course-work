@@ -1,0 +1,17 @@
+﻿@model IEnumerable<OnlineStore.Models.Database.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+<br/>
+<div class="container">
+    @Html.ActionLink("Filtered search", "Index", "Filter", null, new {@class="btn btn-info"})
+    @* Todo: this url not implemented? *@
+    @* <a href="/filter">Filtered search</a> *@
+</div>
+<br/>
+<div class="card-columns">
+    @foreach (var i in Model)
+    {
+        @await Html.PartialAsync("_CardProduct", i)
+    }
+</div>

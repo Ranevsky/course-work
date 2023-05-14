@@ -1,0 +1,255 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.10">
+            <PrivateAssets>all</PrivateAssets>
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <!--    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.0.0" />-->
+        <!--    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.0.0" />-->
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Include="wwwroot\lib\jsPDF-2.5.1\.github\pull_request_template.md" />
+      <Content Include="wwwroot\lib\jsPDF-2.5.1\.github\workflows\continuous-integration.yml" />
+      <Content Include="wwwroot\lib\jsPDF-2.5.1\.github\workflows\npm-publish.yml" />
+      <Content Include="wwwroot\lib\jsPDF-2.5.1\.github\workflows\stale.yml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\lib\jspdf\jspdf.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\applyDecoratedDescriptor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\applyDecs.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\applyDecs2203.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\applyDecs2203R.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\applyDecs2301.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\arrayLikeToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\arrayWithHoles.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\arrayWithoutHoles.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\assertThisInitialized.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\AsyncGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\asyncGeneratorDelegate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\asyncIterator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\asyncToGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\awaitAsyncGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\AwaitValue.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\checkInRHS.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\checkPrivateRedeclaration.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classApplyDescriptorDestructureSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classApplyDescriptorGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classApplyDescriptorSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classCallCheck.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classCheckPrivateStaticAccess.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classCheckPrivateStaticFieldDescriptor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classExtractFieldDescriptor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classNameTDZError.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateFieldDestructureSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateFieldGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateFieldInitSpec.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateFieldLooseBase.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateFieldLooseKey.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateFieldSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateMethodGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateMethodInitSpec.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classPrivateMethodSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classStaticPrivateFieldDestructureSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classStaticPrivateFieldSpecGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classStaticPrivateFieldSpecSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classStaticPrivateMethodGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\classStaticPrivateMethodSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\construct.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\createClass.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\createForOfIteratorHelper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\createForOfIteratorHelperLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\createSuper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\decorate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\defaults.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\defineAccessor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\defineEnumerableProperties.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\defineProperty.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\applyDecoratedDescriptor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\applyDecs.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\applyDecs2203.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\applyDecs2203R.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\applyDecs2301.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\arrayLikeToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\arrayWithHoles.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\arrayWithoutHoles.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\assertThisInitialized.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\AsyncGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\asyncGeneratorDelegate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\asyncIterator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\asyncToGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\awaitAsyncGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\AwaitValue.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\checkInRHS.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\checkPrivateRedeclaration.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classApplyDescriptorDestructureSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classApplyDescriptorGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classApplyDescriptorSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classCallCheck.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classCheckPrivateStaticAccess.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classCheckPrivateStaticFieldDescriptor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classExtractFieldDescriptor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classNameTDZError.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateFieldDestructureSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateFieldGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateFieldInitSpec.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateFieldLooseBase.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateFieldLooseKey.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateFieldSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateMethodGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateMethodInitSpec.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classPrivateMethodSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classStaticPrivateFieldDestructureSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classStaticPrivateFieldSpecGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classStaticPrivateFieldSpecSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classStaticPrivateMethodGet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\classStaticPrivateMethodSet.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\construct.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\createClass.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\createForOfIteratorHelper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\createForOfIteratorHelperLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\createSuper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\decorate.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\defaults.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\defineAccessor.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\defineEnumerableProperties.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\defineProperty.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\extends.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\get.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\getPrototypeOf.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\identity.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\inherits.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\inheritsLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\initializerDefineProperty.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\initializerWarningHelper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\instanceof.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\interopRequireDefault.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\interopRequireWildcard.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\isNativeFunction.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\isNativeReflectConstruct.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\iterableToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\iterableToArrayLimit.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\iterableToArrayLimitLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\jsx.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\maybeArrayLike.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\newArrowCheck.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\nonIterableRest.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\nonIterableSpread.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\objectDestructuringEmpty.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\objectSpread.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\objectSpread2.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\objectWithoutProperties.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\objectWithoutPropertiesLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\OverloadYield.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\package.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\possibleConstructorReturn.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\readOnlyError.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\regeneratorRuntime.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\set.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\setPrototypeOf.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\skipFirstGeneratorNext.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\slicedToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\slicedToArrayLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\superPropBase.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\taggedTemplateLiteral.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\taggedTemplateLiteralLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\tdz.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\temporalRef.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\temporalUndefined.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\toArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\toConsumableArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\toPrimitive.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\toPropertyKey.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\typeof.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\unsupportedIterableToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\wrapAsyncGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\wrapNativeSuper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\wrapRegExp.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\esm\writeOnlyError.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\extends.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\get.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\getPrototypeOf.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\identity.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\inherits.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\inheritsLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\initializerDefineProperty.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\initializerWarningHelper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\instanceof.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\interopRequireDefault.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\interopRequireWildcard.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\isNativeFunction.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\isNativeReflectConstruct.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\iterableToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\iterableToArrayLimit.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\iterableToArrayLimitLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\jsx.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\maybeArrayLike.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\newArrowCheck.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\nonIterableRest.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\nonIterableSpread.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\objectDestructuringEmpty.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\objectSpread.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\objectSpread2.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\objectWithoutProperties.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\objectWithoutPropertiesLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\OverloadYield.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\possibleConstructorReturn.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\readOnlyError.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\regeneratorRuntime.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\set.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\setPrototypeOf.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\skipFirstGeneratorNext.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\slicedToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\slicedToArrayLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\superPropBase.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\taggedTemplateLiteral.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\taggedTemplateLiteralLoose.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\tdz.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\temporalRef.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\temporalUndefined.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\toArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\toConsumableArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\toPrimitive.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\toPropertyKey.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\typeof.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\unsupportedIterableToArray.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\wrapAsyncGenerator.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\wrapNativeSuper.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\wrapRegExp.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\helpers\writeOnlyError.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\package.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\README.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\@babel\runtime\regenerator\index.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\bin\atob.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\bower.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\browser-atob.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\LICENSE.DOCS" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\node-atob.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\package.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\README.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\atob\test.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\bin\btoa.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\index.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\LICENSE" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\LICENSE.DOCS" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\package.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\README.md" />
+      <_ContentIncludedByDefault Remove="wwwroot\lib\btoa\test.js" />
+    </ItemGroup>
+
+</Project>
